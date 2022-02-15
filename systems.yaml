@@ -1,5 +1,6 @@
 --- # Wreckage Systems Status Systems
 "All Available Data" :
+  - "CONCRETE VERSIONS FOUND ON WRECKAGE RELEASE #3"
   - "Do you want to listen to ten minutes of procedural 65days techno? Because that's what is about to happen..."
 "AC // Pianic_01" : []
 "AC // Companic_01" : []
@@ -43,7 +44,8 @@
 "Proto_YU" : []
 "Renoiser" : []
 "Renoiser_Ambient" : []
-"Scout" : []
+"Scout" : 
+  - "BASED ON THE CUT FROM THE TEMPO HEAVY E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE. WINTER INFRASTRUCTURE FIELD RECORDINGS
 "Seed // Ascendant" : []
 "Seed // AncientAlso" : []
 "Seed // Back of Things" : []
@@ -62,14 +64,16 @@
 "Seed // Sol" :
   - "USING THE SEED SUBSYSTEM"
 "Seed // Static" : []
-"Seed // stories" : []
+"Seed // stories" : 
+  - "BUILT FROM A EUCLIDEAN PROTOTYPE. DEFINITELY NON-EUCLIDEAN
 "Seed // threadless" : []
 "Seed // Variant" : []
 "Shapeshifter" : []
 "Snowdrift V2" : []
 "Squall" :
   - "FIELD RECORDINGS FROM A GENTRIFIED SALVAGE OPERATION"
-"SummsThUnder" : []
+"SummsThUnder" : 
+  - "CONCRETE VERSION 'UNDER THE SUMMS' FOUND ON WRECKAGE RELEASE #1"
 "System65" : []
 "The Flood Pulse" :
   - "STATE-HEAVY"
