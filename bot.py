@@ -89,7 +89,7 @@ if __name__ == "__main__":
         
     if system != last_reported_system:    
         # Send the tweet
-        send_tweet(system, meta_data)
+        send_tweet(dir, system, meta_data)
     
     # Write the current system to file
     with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
