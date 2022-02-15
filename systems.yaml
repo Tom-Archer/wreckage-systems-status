@@ -30,6 +30,7 @@
 "Malign" :
   - "RECORDED AT 65HQ 190521"
 "MIMIK" : 
+  - "CONCRETE VERSIONS FOUND ON WRECKAGE RELEASE #4"
   - "Kick drums to infinity..."
 "Mist // CrackleTone_1" : []
 "Mist // Loc Flutter" : []
@@ -57,7 +58,8 @@
 "Seed // FS_PianoVariant" : []
 "Seed // Hidden" : []
 "Seed // Kill Yr Dreams" : []
-"Seed // NiteTime" : []
+"Seed // NiteTime" : 
+  - "USING THE SEED SUBSYSTEM"
 "Seed // Resistor-Noise" : []
 "Seed // SF_Ambient" :
   - "BASED ON THE CUT FROM THE KAZIMIR E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
@@ -69,7 +71,8 @@
 "Seed // threadless" : []
 "Seed // Variant" : []
 "Shapeshifter" : []
-"Snowdrift V2" : []
+"Snowdrift V2" : 
+  - "FORGED FROM THE BLEAK WINTER WINDS THAT SHUDDERED THE WALLS OF 65HQ"
 "Squall" :
   - "FIELD RECORDINGS FROM A GENTRIFIED SALVAGE OPERATION"
 "SummsThUnder" : 
@@ -79,7 +82,8 @@
   - "STATE-HEAVY"
 "Thief Cuts" : []
 "Unravelling" : []
-"UPHILL" : []
+"UPHILL" :
+  - "AUDO FROM TRAIN-BASED PIANO COLLAPSE CIRCA 2015. REFORGED. SUBJECT TO GLITCHES"
 "VerticalFault" : []
 "VoxRelic" : []
 "Wanderer (Revision A)" : []
