@@ -71,7 +71,7 @@ https://www.youtube.com/65PROPAGANDA/LIVE"""
 
 if __name__ == "__main__":
     # Get CWD
-    dir = os.path.dirname(os.path.abspath(__file__)
+    dir = os.path.dirname(os.path.abspath(__file__))
     
     # Load Systems
     system_data = {}
