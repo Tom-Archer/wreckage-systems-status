@@ -1,3 +1,4 @@
+import os
 import random
 import tweepy
 import urllib.request
@@ -38,7 +39,7 @@ def get_system_meta_data(system_data, system):
 
     return ""
 
-def send_tweet(system, meta_data):
+def send_tweet(dir, system, meta_data):
     # Construct the tweet
     tweet_string = """Now playing the '{0}' system {1}
 
@@ -47,7 +48,7 @@ https://www.youtube.com/65PROPAGANDA/LIVE"""
     print(tweet_string)
         
     # Load Config
-    with open("config.yaml", "r") as config_file:
+    with open(os.path.join(dir, "config.yaml"), "r") as config_file:
         config_data = load(config_file, Loader=Loader)
     
         try:
@@ -69,9 +70,12 @@ https://www.youtube.com/65PROPAGANDA/LIVE"""
             print("Error attempting to tweet")
 
 if __name__ == "__main__":
+    # Get CWD
+    dir = os.path.dirname(os.path.abspath(__file__)
+    
     # Load Systems
     system_data = {}
-    with open("systems.yaml", "r") as systems_file:
+    with open(os.path.join(dir, "systems.yaml"), "r") as systems_file:
         system_data = load(systems_file, Loader=Loader)
         
     # Get the current system and its meta-data (if available)
@@ -80,7 +84,7 @@ if __name__ == "__main__":
     
     # Get the last reported system
     last_reported_system = ""
-    with open("system.txt", "r") as last_system_file:
+    with open(os.path.join(dir, "system.txt"), "r") as last_system_file:
         last_reported_system = last_system_file.readline()
         
     if system != last_reported_system:    
@@ -88,5 +92,5 @@ if __name__ == "__main__":
         send_tweet(system, meta_data)
     
     # Write the current system to file
-    with open("system.txt", "w") as last_system_file:
+    with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
         last_system_file.write(system)
