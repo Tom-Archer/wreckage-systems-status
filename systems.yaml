@@ -6,15 +6,17 @@
 "AC // Companic_01" : []
 "AC // Companic_02" : 
   - "AN AUTOCODE SYSTEM"
-"AC // Companic_03" : []
-"AC // QuietArp_01" : []
+"AC // Companic_03" :
+  - "AN AUTOCODE SYSTEM"
+"AC // QuietArp_01" : 
+  - "AN AUTOCODE SYSTEM"
 "AC // QuietArp_02" : 
   - "AN AUTOCODE SYSTEM"
 "Bit Drift" : []
 "Bowed Bass #1" :
   - "This one was made by applying a violin bow to a bass guitar and employing a small family of distortion pedals."
 "CryWave" :
-  - "IF VAPOR HADN'T FALLED INTO ACCELERATIONIST DISREPAIR"
+  - "IF VAPOR HADN'T FALLEN INTO ACCELERATIONIST DISREPAIR"
   - "Finally you can stop wondering what it would sound like if vaporwave evolved into weird procedural skronkiness instead of suspect accelerationist retrostalgia!"
 "Cycle Three" :
   - "DISTORTION AND FREQUENCY MODULATION"
@@ -40,11 +42,13 @@
   - "USING THE MIST SUBSYSTEM"
 "Mist // Subplot" : []
 "Mumble Prime" : []
-"Number Station" : []
+"Number Station" :
+  - "5.422-16.084 MHZ"
 "Papour" : []
 "Paralt [Piano]" : 
   - "FORKED FROM THE PARALT-SYSTEM. REMADE FOR PIANOS. ADDED SADNESS"
-"Paralt Original" : []
+"Paralt Original" : 
+  - "MACRO-HACKS FROM GESTALT SONICS"
 "Pianoblivion" : []
 "Proto_YU" : []
 "Renoiser" : []
@@ -55,7 +59,8 @@
 "Seed // AncientAlso" : []
 "Seed // Back of Things" : []
 "Seed // Bolt" : []
-"Seed // circuit magnetic" : []
+"Seed // circuit magnetic" : 
+  - "USING THE SEED SUBSYSTEM"
 "Seed // Dawn" : []
 "Seed // Dream #5" : []
 "Seed // Drift" : []
@@ -72,7 +77,8 @@
 "Seed // Static" : []
 "Seed // stories" : 
   - "BUILT FROM A EUCLIDEAN PROTOTYPE. DEFINITELY NON-EUCLIDEAN"
-"Seed // threadless" : []
+"Seed // threadless" : 
+  - "USING THE SEED SUBSYSTEM"
 "Seed // Variant" : []
 "Shapeshifter" : []
 "Snowdrift V2" : 
@@ -86,9 +92,10 @@
 "The Flood Pulse" :
   - "STATE-HEAVY"
 "Thief Cuts" : []
-"Unravelling" : []
+"Unravelling" : 
+  - "AREN'T WE ALL?"
 "UPHILL" :
-  - "AUDO FROM TRAIN-BASED PIANO COLLAPSE CIRCA 2015. REFORGED. SUBJECT TO GLITCHES"
+  - "AUDIO FROM TRAIN-BASED PIANO COLLAPSE CIRCA 2015. REFORGED. SUBJECT TO GLITCHES"
 "VerticalFault" : []
 "VoxRelic" : 
   - "MINIMAL LOOP-BASED SKELETONS"
