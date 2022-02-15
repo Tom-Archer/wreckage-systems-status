@@ -34,7 +34,8 @@
   - "Kick drums to infinity..."
 "Mist // CrackleTone_1" : []
 "Mist // Loc Flutter" : []
-"Mist // Riptide" : []
+"Mist // Riptide" : 
+  - "USING THE MIST SUBSYSTEM"
 "Mist // Subplot" : []
 "Mumble Prime" : []
 "Number Station" : []
@@ -67,7 +68,7 @@
   - "USING THE SEED SUBSYSTEM"
 "Seed // Static" : []
 "Seed // stories" : 
-  - "BUILT FROM A EUCLIDEAN PROTOTYPE. DEFINITELY NON-EUCLIDEAN
+  - "BUILT FROM A EUCLIDEAN PROTOTYPE. DEFINITELY NON-EUCLIDEAN"
 "Seed // threadless" : []
 "Seed // Variant" : []
 "Shapeshifter" : []
