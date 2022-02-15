@@ -4,7 +4,8 @@
   - "Do you want to listen to ten minutes of procedural 65days techno? Because that's what is about to happen..."
 "AC // Pianic_01" : []
 "AC // Companic_01" : []
-"AC // Companic_02" : []
+"AC // Companic_02" : 
+  - "AN AUTOCODE SYSTEM"
 "AC // Companic_03" : []
 "AC // QuietArp_01" : []
 "AC // QuietArp_02" : 
@@ -80,7 +81,8 @@
   - "FIELD RECORDINGS FROM A GENTRIFIED SALVAGE OPERATION"
 "SummsThUnder" : 
   - "CONCRETE VERSION 'UNDER THE SUMMS' FOUND ON WRECKAGE RELEASE #1"
-"System65" : []
+"System65" : 
+  - "A JANITOR DISCOVERED WILD APPS GROWING IN THE 65LABS BASEMENT. THEY WERE CULTIVATED"
 "The Flood Pulse" :
   - "STATE-HEAVY"
 "Thief Cuts" : []
@@ -88,5 +90,6 @@
 "UPHILL" :
   - "AUDO FROM TRAIN-BASED PIANO COLLAPSE CIRCA 2015. REFORGED. SUBJECT TO GLITCHES"
 "VerticalFault" : []
-"VoxRelic" : []
+"VoxRelic" : 
+  - "MINIMAL LOOP-BASED SKELETONS"
 "Wanderer (Revision A)" : []
