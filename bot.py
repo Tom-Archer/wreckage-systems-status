@@ -14,8 +14,9 @@ def get_current_system():
     try:
         with urllib.request.urlopen(req) as resp:
             lines = resp.readlines()
-            system_pos = lines[3].find('|') + 2
-            return lines[3][system_pos:]
+            system_raw = lines[3].decode('ascii').strip()
+            system_pos = system_raw.find('|') + 2
+            return system_raw[system_pos:]
     except:
         return ""
 
