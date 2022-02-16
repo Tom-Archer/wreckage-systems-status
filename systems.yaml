@@ -4,6 +4,7 @@
   - "Do you want to listen to ten minutes of procedural 65days techno? Because that's what is about to happen..."
 "AC // Pianic_01" : [] #None
 "AC // Companic_01" : []
+  - "AN AUTOCODE SYSTEM"
 "AC // Companic_02" : 
   - "AN AUTOCODE SYSTEM"
 "AC // Companic_03" :
@@ -15,6 +16,7 @@
 "Bit Drift" : 
   - "SMUDGED DATA"
 "Bowed Bass #1" :
+  - "RECORDED AT 65HQ 010721"
   - "This one was made by applying a violin bow to a bass guitar and employing a small family of distortion pedals."
 "CryWave" :
   - "IF VAPOR HADN'T FALLEN INTO ACCELERATIONIST DISREPAIR"
@@ -25,7 +27,8 @@
   - "PHYSICS-BASED PHASED EUCLIDIAN CONSTELLATION MOTORS"
 "Detext" : 
   - "VERSION TWO. ORIGINAL CAN STILL BE FOUND IN THE V1 ARCHIVE. THIS SYSTEM WAS ONE OF THE ORIGINAL WRECKAGE SYSTMES BROADCAST PROTOTYPES"
-"Dulcimer A1" : []
+"Dulcimer A1" : 
+  - "MINIMAL RNG TACTICS"
 "Evaporated V2" :
   - "16BIT SINE WAVES AND SCALE FILTERS"
 "Idle Cuts #1" :
@@ -48,10 +51,12 @@
   - "USING THE MIST SUBSYSTEM"
 "Mist // Subplot" : 
   - "USING THE MIST SUBSYSTEM"
-"Mumble Prime" : []
+"Mumble Prime" : 
+  - "MACRO-HACKS OF CAPTURED AUDIO FROM THE ABANDONED MUMBLE LIVE RIG"
 "Number Station" :
   - "5.422-16.084 MHZ"
-"Papour" : []
+"Papour" : 
+  - "SYNTHS FROM THE DEEP"
 "Paralt [Piano]" : 
   - "FORKED FROM THE PARALT-SYSTEM. REMADE FOR PIANOS. ADDED SADNESS"
 "Paralt Original" : 
@@ -82,7 +87,8 @@
 "Seed // Drift" : []
 "Seed // FS_PianoVariant" : 
   - "BASED ON THE CUT FROM THE FUGUE STATE E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
-"Seed // Hidden" : []
+"Seed // Hidden" : 
+  - "USING THE SEED SUBSYSTEM"
 "Seed // Kill Yr Dreams" : []
 "Seed // NiteTime" : 
   - "USING THE SEED SUBSYSTEM"
