@@ -3,7 +3,7 @@
   - "CONCRETE VERSIONS FOUND ON WRECKAGE RELEASE #3"
   - "Do you want to listen to ten minutes of procedural 65days techno? Because that's what is about to happen..."
 "AC // Pianic_01" : [] #None
-"AC // Companic_01" : []
+"AC // Companic_01" : 
   - "AN AUTOCODE SYSTEM"
 "AC // Companic_02" : 
   - "AN AUTOCODE SYSTEM"
@@ -67,7 +67,8 @@
   - "BUILT FROM A EUCLIDEAN PROTOTYPE. DEFINITELY NON-EUCLIDEAN"
 "Renoiser" :
   - "BASED ON THE SONG 'RENOISER' FOR 'COMPASSION THROUGH ALGORITHMS VOL. II' BY LIGHT ENTRIES"
-"Renoiser_Ambient" : []
+"Renoiser_Ambient" : 
+  - "BASED ON THE SONG 'RENOISER' FOR 'COMPASSION THROUGH ALGORITHMS VOL. II' BY LIGHT ENTRIES"
 "Scout" : 
   - "BASED ON THE CUT FROM THE TEMPO HEAVY E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE. WINTER INFRASTRUCTURE FIELD RECORDINGS"
 "Seed // Ascendant" : 
@@ -81,10 +82,12 @@
   - "This system was built using parts from a song called Asymmetry that we hastily released last year for a fundraising thing. In case you missed that... https://65daysofstatic.bandcamp.com/track/asymmetry"
 "Seed // circuit magnetic" : 
   - "USING THE SEED SUBSYSTEM"
-"Seed // Dawn" : []
+"Seed // Dawn" : 
+  - "USING THE SEED SUBSYSTEM"
 "Seed // Dream #5" : 
   - "BASED ON THE CUT FROM THE 7OVER8 E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
-"Seed // Drift" : []
+"Seed // Drift" : 
+  - "USING THE SEED SUBSYSTEM"
 "Seed // FS_PianoVariant" : 
   - "BASED ON THE CUT FROM THE FUGUE STATE E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
 "Seed // Hidden" : 
