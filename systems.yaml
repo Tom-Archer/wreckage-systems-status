@@ -12,7 +12,8 @@
   - "AN AUTOCODE SYSTEM"
 "AC // QuietArp_02" : 
   - "AN AUTOCODE SYSTEM"
-"Bit Drift" : []
+"Bit Drift" : 
+  - "SMUDGED DATA"
 "Bowed Bass #1" :
   - "This one was made by applying a violin bow to a bass guitar and employing a small family of distortion pedals."
 "CryWave" :
@@ -22,7 +23,8 @@
   - "DISTORTION AND FREQUENCY MODULATION"
 "Cyclone" :
   - "PHYSICS-BASED PHASED EUCLIDIAN CONSTELLATION MOTORS"
-"Detext" : []
+"Detext" : 
+  - "VERSION TWO. ORIGINAL CAN STILL BE FOUND IN THE V1 ARCHIVE. THIS SYSTEM WAS ONE OF THE ORIGINAL WRECKAGE SYSTMES BROADCAST PROTOTYPES"
 "Dulcimer A1" : []
 "Evaporated V2" :
   - "16BIT SINE WAVES AND SCALE FILTERS"
@@ -38,8 +40,10 @@
 "MIMIK" : 
   - "CONCRETE VERSIONS FOUND ON WRECKAGE RELEASE #4"
   - "Kick drums to infinity..."
-"Mist // CrackleTone_1" : []
-"Mist // Loc Flutter" : []
+"Mist // CrackleTone_1" :
+  - "USING THE MIST SUBSYSTEM"
+"Mist // Loc Flutter" : 
+  - "USING THE MIST SUBSYSTEM"
 "Mist // Riptide" : 
   - "USING THE MIST SUBSYSTEM"
 "Mist // Subplot" : 
@@ -94,6 +98,7 @@
   - "USING THE SEED SUBSYSTEM"
 "Seed // Variant" : []
 "Shapeshifter" : 
+  - "BASED ON AUDIO FROM THE A YEAR OF WRECKAGE ARCHIVE"
   - "Imagine the sound of sun glinting off a lake full of fish, but when you look more closely you see it's not fish, it's a school of tremolo pedals."
 "Snowdrift V2" : 
   - "FORGED FROM THE BLEAK WINTER WINDS THAT SHUDDERED THE WALLS OF 65HQ"
@@ -111,7 +116,8 @@
   - "AREN'T WE ALL?"
 "UPHILL" :
   - "AUDIO FROM TRAIN-BASED PIANO COLLAPSE CIRCA 2015. REFORGED. SUBJECT TO GLITCHES"
-"VerticalFault" : []
+"VerticalFault" :
+  - "SONIFIED GRAVITY WELL"
 "VoxRelic" : 
   - "MINIMAL LOOP-BASED SKELETONS"
 "Wanderer (Revision A)" : 
