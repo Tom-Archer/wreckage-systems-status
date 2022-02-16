@@ -2,7 +2,7 @@
 "All Available Data" :
   - "CONCRETE VERSIONS FOUND ON WRECKAGE RELEASE #3"
   - "Do you want to listen to ten minutes of procedural 65days techno? Because that's what is about to happen..."
-"AC // Pianic_01" : []
+"AC // Pianic_01" : [] #None
 "AC // Companic_01" : []
 "AC // Companic_02" : 
   - "AN AUTOCODE SYSTEM"
@@ -29,8 +29,10 @@
 "Idle Cuts #1" :
   - "CUTS FROM A PRE-WRECKAGE SYSTEMS 5 HOUR AMBIENT SYSTEM ORIGINALLY MADE IN 2019"
   - "This system generatively constructs itself from a pool of 6hrs soundscapes we once made for idlehandscoffee in exchange for free coffee. Did we undervalue our music? NO: THE COFFEE IS THAT GOOD."
-"Laser Games" : []
-"Laser -> Solar" : []
+"Laser Games" : 
+  - "STARS"
+"Laser -> Solar" :
+  - "WHEN LASERS ARE POINTED INTO SPACE"
 "Malign" :
   - "RECORDED AT 65HQ 190521"
 "MIMIK" : 
@@ -40,7 +42,8 @@
 "Mist // Loc Flutter" : []
 "Mist // Riptide" : 
   - "USING THE MIST SUBSYSTEM"
-"Mist // Subplot" : []
+"Mist // Subplot" : 
+  - "USING THE MIST SUBSYSTEM"
 "Mumble Prime" : []
 "Number Station" :
   - "5.422-16.084 MHZ"
@@ -58,16 +61,20 @@
 "Renoiser_Ambient" : []
 "Scout" : 
   - "BASED ON THE CUT FROM THE TEMPO HEAVY E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE. WINTER INFRASTRUCTURE FIELD RECORDINGS"
-"Seed // Ascendant" : []
-"Seed // AncientAlso" : []
-"Seed // Back of Things" : []
+"Seed // Ascendant" : 
+  - "USING THE SEED SUBSYSTEM"
+"Seed // AncientAlso" : 
+  - "BASED ON THE CUT FROM THE 7OVER8 E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
+"Seed // Back of Things" : 
+  - "BASED ON THE CUT FROM THE TEMPO HEAVY E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
 "Seed // Bolt" : 
   - "Just the kind of calm you need for the heavy sky of a grey morning. Tune in quick before it decides to start playing banging techno instead."
   - "This system was built using parts from a song called Asymmetry that we hastily released last year for a fundraising thing. In case you missed that... https://65daysofstatic.bandcamp.com/track/asymmetry"
 "Seed // circuit magnetic" : 
   - "USING THE SEED SUBSYSTEM"
 "Seed // Dawn" : []
-"Seed // Dream #5" : []
+"Seed // Dream #5" : 
+  - "BASED ON THE CUT FROM THE 7OVER8 E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
 "Seed // Drift" : []
 "Seed // FS_PianoVariant" : 
   - "BASED ON THE CUT FROM THE FUGUE STATE E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
@@ -98,7 +105,8 @@
   - "A JANITOR DISCOVERED WILD APPS GROWING IN THE 65LABS BASEMENT. THEY WERE CULTIVATED"
 "The Flood Pulse" :
   - "STATE-HEAVY"
-"Thief Cuts" : []
+"Thief Cuts" : 
+  - "CONSTRUCTED FROM THE DORMANT ABANDONED MIDI THIEF ALGORITHM"
 "Unravelling" : 
   - "AREN'T WE ALL?"
 "UPHILL" :
