@@ -7,24 +7,17 @@ from yaml import load, Loader
 TWEET = False
 
 def get_current_system():
-    """Returns the currently playing system name."""
-    line_number = 0
-    current_line = ""
-    
+    """Returns the currently playing system name."""  
     req = urllib.request.Request('https://data.65daysofstatic.com/wreckage/log.txt')
     req.headers['Range'] = 'bytes=%s-%s' % (0, 150)
     
-    for line in urllib.request.urlopen(req):
-           
-        if(line_number == 3):
-            current_line = line.decode('ascii').strip()
-            break
-    
-        line_number = line_number + 1
-    
-    system_pos = current_line.find('|') + 2
-
-    return current_line[system_pos:]
+    try:
+        with urllib.request.urlopen(req) as resp:
+            lines = resp.readlines()
+            system_pos = lines[3].find('|') + 2
+            return lines[3][system_pos:]
+    except:
+        return ""
 
 def get_system_meta_data(system_data, system):
     """Returns the specified system's meta-data."""
@@ -82,15 +75,16 @@ if __name__ == "__main__":
     system = get_current_system()
     meta_data = get_system_meta_data(system_data, system)
     
-    # Get the last reported system
-    last_reported_system = ""
-    with open(os.path.join(dir, "system.txt"), "r") as last_system_file:
-        last_reported_system = last_system_file.readline()
-        
-    if system != last_reported_system:    
-        # Send the tweet
-        send_tweet(dir, system, meta_data)
-    
-    # Write the current system to file
-    with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
-        last_system_file.write(system)
+    if system != "":
+        # Get the last reported system
+        last_reported_system = ""
+        with open(os.path.join(dir, "system.txt"), "r") as last_system_file:
+            last_reported_system = last_system_file.readline()
+
+        if system != last_reported_system:    
+            # Send the tweet
+            send_tweet(dir, system, meta_data)
+
+        # Write the current system to file
+        with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
+            last_system_file.write(system)
