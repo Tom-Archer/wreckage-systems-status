@@ -51,7 +51,8 @@
   - "MACRO-HACKS FROM GESTALT SONICS"
 "Pianoblivion" :
   - "Old school 65 melodrama"
-"Proto_YU" : []
+"Proto_YU" : 
+  - "BUILT FROM A EUCLIDEAN PROTOTYPE. DEFINITELY NON-EUCLIDEAN"
 "Renoiser" :
   - "BASED ON THE SONG 'RENOISER' FOR 'COMPASSION THROUGH ALGORITHMS VOL. II' BY LIGHT ENTRIES"
 "Renoiser_Ambient" : []
@@ -68,7 +69,8 @@
 "Seed // Dawn" : []
 "Seed // Dream #5" : []
 "Seed // Drift" : []
-"Seed // FS_PianoVariant" : []
+"Seed // FS_PianoVariant" : 
+  - "BASED ON THE CUT FROM THE FUGUE STATE E.P. FROM THE A YEAR OF WRECKAGE ARCHIVE"
 "Seed // Hidden" : []
 "Seed // Kill Yr Dreams" : []
 "Seed // NiteTime" : 
@@ -106,4 +108,3 @@
   - "MINIMAL LOOP-BASED SKELETONS"
 "Wanderer (Revision A)" : 
   - "WHO IS THE ONE THAT WALKS BESIDE YOU?"
-  
