@@ -41,7 +41,8 @@ def send_tweet(dir, system, meta_data):
 https://www.youtube.com/65PROPAGANDA/LIVE"""
     tweet_string = tweet_string.format(datetime.now().strftime("%H:%M"), system, meta_data)        
     print(tweet_string)
-        
+    print("\n")
+    
     # Load Config
     with open(os.path.join(dir, "config.yaml"), "r") as config_file:
         config_data = load(config_file, Loader=Loader)
@@ -61,8 +62,8 @@ https://www.youtube.com/65PROPAGANDA/LIVE"""
             # Tweet
             if (TWEET):
                 status = api.update_status(tweet_string)
-        except:
-            print("Error attempting to tweet")
+        except Exception as e:
+            print("Error attempting to tweet:", e)
 
 if __name__ == "__main__":
     # Get CWD
