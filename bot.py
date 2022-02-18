@@ -62,9 +62,11 @@ https://www.youtube.com/65PROPAGANDA/LIVE"""
             # Tweet
             if (TWEET):
                 status = api.update_status(tweet_string)
+            return True
         except Exception as e:
             print("Error attempting to tweet:", e)
-
+    return False
+    
 if __name__ == "__main__":
     # Get CWD
     dir = os.path.dirname(os.path.abspath(__file__))
@@ -86,8 +88,8 @@ if __name__ == "__main__":
 
         if system != last_reported_system:    
             # Send the tweet
-            send_tweet(dir, system, meta_data)
+            success = send_tweet(dir, system, meta_data)
 
-        # Write the current system to file
-        with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
-            last_system_file.write(system)
+            # Write the current system to file
+            with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
+                last_system_file.write(system)
