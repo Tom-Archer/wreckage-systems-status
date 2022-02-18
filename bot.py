@@ -2,6 +2,7 @@ import os
 import random
 import tweepy
 import urllib.request
+from datetime import datetime
 from yaml import load, Loader
 
 TWEET = False
@@ -34,11 +35,11 @@ def get_system_meta_data(system_data, system):
     return ""
 
 def send_tweet(dir, system, meta_data):
-    # Construct the tweet
-    tweet_string = """Now playing the '{0}' system {1}
+    # Construct the tweet    
+    tweet_string = """{0} // Now playing the '{1}' system {2}
 
 https://www.youtube.com/65PROPAGANDA/LIVE"""
-    tweet_string = tweet_string.format(system, meta_data)        
+    tweet_string = tweet_string.format(datetime.now().strftime("%H:%M"), system, meta_data)        
     print(tweet_string)
         
     # Load Config
