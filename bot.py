@@ -5,7 +5,7 @@ import urllib.request
 from datetime import datetime
 from yaml import load, Loader
 
-TWEET = False
+TWEET = True
 
 def get_current_system():
     """Returns the currently playing system name."""  
