@@ -18,7 +18,8 @@ def get_current_system():
             system_raw = lines[3].decode('ascii').strip()
             system_pos = system_raw.find('|') + 2
             return system_raw[system_pos:]
-    except:
+    except Exception as e:
+        print("Error attempting to connect:", e)
         return ""
 
 def get_system_meta_data(system_data, system):
@@ -40,31 +41,33 @@ def send_tweet(dir, system, meta_data):
 
 https://www.youtube.com/65PROPAGANDA/LIVE"""
     tweet_string = tweet_string.format(datetime.now().strftime("%H:%M"), system, meta_data)        
-    print(tweet_string)
-        
+            
     # Load Config
     with open(os.path.join(dir, "config.yaml"), "r") as config_file:
         config_data = load(config_file, Loader=Loader)
-    
-        try:
-            # Authenticate Tweepy
-            auth = tweepy.OAuth1UserHandler(
-               config_data["consumer_key"],
-               config_data["consumer_secret"],
-               config_data["access_token"],
-               config_data["access_token_secret"]
-            )
-
-            api = tweepy.API(auth)
-            api.verify_credentials()
-            
-            # Tweet
-            if (TWEET):
+     
+        if (TWEET):
+            try:        
+                # Authenticate Tweepy
+                auth = tweepy.OAuth1UserHandler(
+                   config_data["consumer_key"],
+                   config_data["consumer_secret"],
+                   config_data["access_token"],
+                   config_data["access_token_secret"]
+                )
+                api = tweepy.API(auth)
+                api.verify_credentials()
+                
+                # Tweet
                 status = api.update_status(tweet_string)
+                return True
+            except Exception as e:
+                print("Error attempting to tweet:", e)
+                print(tweet_string, "\n")
+                return False                
+        else:
+            print(tweet_string, "\n")            
             return True
-        except Exception as e:
-            print("Error attempting to tweet:", e)
-    return False
     
 if __name__ == "__main__":
     # Get CWD
@@ -88,7 +91,6 @@ if __name__ == "__main__":
         if system != last_reported_system:    
             # Send the tweet
             success = send_tweet(dir, system, meta_data)
-            print()
             
             # Write the current system to file
             with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
