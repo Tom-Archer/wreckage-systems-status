@@ -19,7 +19,7 @@ def get_current_system():
             system_pos = system_raw.find('|') + 2
             return system_raw[system_pos:]
     except Exception as e:
-        print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "Error attempting to connect:", e)
+        print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "| Error attempting to connect:", e)
         return ""
 
 def get_system_meta_data(system_data, system):
@@ -62,7 +62,7 @@ https://www.youtube.com/65PROPAGANDA/LIVE"""
                 status = api.update_status(tweet_string)
                 return True
             except Exception as e:
-                print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "Error attempting to tweet:", e)
+                print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "| Error attempting to tweet:", e)
                 print(tweet_string, "\n")
                 return False                
         else:
