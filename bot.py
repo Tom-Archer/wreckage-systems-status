@@ -92,6 +92,7 @@ if __name__ == "__main__":
             # Send the tweet
             success = send_tweet(dir, system, meta_data)
             
-            # Write the current system to file
-            with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
-                last_system_file.write(system)
+            if success:
+                # Write the current system to file
+                with open(os.path.join(dir, "system.txt"), "w") as last_system_file:
+                    last_system_file.write(system)
