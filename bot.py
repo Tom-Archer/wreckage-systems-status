@@ -15,9 +15,13 @@ def get_current_system():
     try:
         with urllib.request.urlopen(req) as resp:
             lines = resp.readlines()
-            system_raw = lines[3].decode('ascii').strip()
-            system_pos = system_raw.find('|') + 2
-            return system_raw[system_pos:]
+            if len(lines) > 3:
+                system_raw = lines[3].decode('ascii').strip()
+                system_pos = system_raw.find('|') + 2
+                return system_raw[system_pos:]
+            else:
+                print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "| Error retrieving log:", lines)
+                return ""
     except Exception as e:
         print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "| Error attempting to connect:", e)
         return ""
