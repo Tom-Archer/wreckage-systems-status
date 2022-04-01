@@ -7,8 +7,8 @@ from yaml import load, Loader
 
 TWEET = True
 
-def get_current_system():
-    """Returns the currently playing system name."""  
+def get_most_recent_log_string():
+    """Returns the most recent entry in the system log."""  
     req = urllib.request.Request('https://data.65daysofstatic.com/wreckage/log.txt')
     req.headers['Range'] = 'bytes=%s-%s' % (0, 150)
     
@@ -16,15 +16,23 @@ def get_current_system():
         with urllib.request.urlopen(req) as resp:
             lines = resp.readlines()
             if len(lines) > 3:
-                system_raw = lines[3].decode('ascii').strip()
-                system_pos = system_raw.find('|') + 2
-                return system_raw[system_pos:]
+                return lines[3].decode('ascii').strip()
             else:
                 print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "| Error retrieving log:", lines)
                 return ""
     except Exception as e:
         print(datetime.now().strftime("%Y-%m-%d @ %H:%M"), "| Error attempting to connect:", e)
         return ""
+    
+def get_current_time(log_string):
+    """Returns the current time from the log line."""
+    time_pos = log_string.find('@') + 2
+    return log_string[time_pos:time_pos + 5]
+    
+def get_current_system(log_string):
+    """Returns the currently playing system name from the log line."""
+    system_pos = log_string.find('|') + 2
+    return log_string[system_pos:]
 
 def get_system_meta_data(system_data, system):
     """Returns the specified system's meta-data."""
@@ -39,12 +47,12 @@ def get_system_meta_data(system_data, system):
 
     return ""
 
-def send_tweet(dir, system, meta_data):
+def send_tweet(dir, log_time, system, meta_data):
     # Construct the tweet    
     tweet_string = """{0} // Now playing the '{1}' system {2}
 
 https://www.youtube.com/65PROPAGANDA/LIVE"""
-    tweet_string = tweet_string.format(datetime.now().strftime("%H:%M"), system, meta_data)        
+    tweet_string = tweet_string.format(log_time, system, meta_data)        
             
     # Load Config
     with open(os.path.join(dir, "config.yaml"), "r") as config_file:
@@ -83,7 +91,9 @@ if __name__ == "__main__":
         system_data = load(systems_file, Loader=Loader)
         
     # Get the current system and its meta-data (if available)
-    system = get_current_system()
+    log_string = get_most_recent_log_string()
+    system = get_current_system(log_string)
+    log_time = get_current_time(log_string)
     meta_data = get_system_meta_data(system_data, system)
     
     if system != "":
@@ -94,7 +104,7 @@ if __name__ == "__main__":
 
         if system != last_reported_system:    
             # Send the tweet
-            success = send_tweet(dir, system, meta_data)
+            success = send_tweet(dir, log_time, system, meta_data)
             
             if success:
                 # Write the current system to file
